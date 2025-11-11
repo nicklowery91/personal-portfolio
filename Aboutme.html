@@ -1,97 +1,88 @@
 <!DOCTYPE html>
 <!-- 
-	Student Name: Nicholas Lowery
-	File Name: About Me.html, About Me page
-	Date: January 22, 2024
- -->
+  Student Name: Nicholas Lowery
+  File Name: aboutme.html
+  Page: About Me
+  Last Updated: November 11, 2025
+-->
 <html lang="en">
 <head>
-
-	<title>Nicholas Lowery: About Me</title>
-	<meta charnet="utf-8">
-	<link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Nicholas Lowery: About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Nicholas Lowery — web applications & programming student, entrepreneur, and tech enthusiast.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <div id="container">
+    <!-- Accessible Mobile Nav -->
+    <nav class="site-nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Go to homepage">NL</a>
 
-<div id="container">
+      <button class="menu-toggle" aria-controls="menu-links" aria-expanded="false" aria-label="Open menu">
+        <span class="menu-icon" aria-hidden="true">&#9776;</span>
+      </button>
 
-	<!-- Mobile Nav -->
-	<nav class="mobile-nav">
-		<div id="menu-links">
-			<a href="index.html">Home</a>
-			<a href="Aboutme.html">About Me</a>
-			<a href="Education.html">Education</a>
-			<a href="Contact.html">Contact</a>
-		</div>
-		<a class="menu-icon">
-			<div>&#9776;</div>
-		</a>
-	</nav>
-	
-<style>
-img {
-  border: 12.5px solid #d4af37;
-}
+      <div id="menu-links" class="menu-links" role="navigation">
+        <a href="index.html">Home</a>
+        <a aria-current="page" href="aboutme.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
 
-</style>
-	<header>
-	
-	<h1> Nicholas Lowery: About Me</h1>
-	<img src="images/nick-lowery.png" alt="Nick Lowery" class="center">
-	<h2>Misson: To further my career in Computer Science.</h2>
-	</header>
-	
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="Aboutme.html">About Me</a></li>
-			<li><a href="Education.html">Education</a></li>
-			<li><a href="Contact.html">Contact</a></li>
-		</ul>
-	</nav>
-	<!-- Use the main area to add the main content of the webpage -->
-	<main>
-		<p>Hello! My name is Nicholas Lowery. This is my own personal portfolio of myself.  I am a 32-year-old student at FDTC University. I am majoring in web applications and programming with a passion for computers and programming that has always driven me. Alongside my academic pursuits, I run a travel business and a photo booth business, adding an entrepreneurial flair to my diverse interests and skills. I am looking forward to graduating in May 2024 and applying my knowledge and experience to create innovative solutions in the tech industry.</p>
-		<style>
-* {
-  box-sizing: border-box;
-}
+    <header class="page-header">
+      <h1>Nicholas Lowery: About Me</h1>
+      <p class="tagline">Mission: To further my career in Computer Science.</p>
+      <figure class="hero-figure">
+        <img src="images/nick-lowery.png" alt="Portrait of Nicholas Lowery" class="hero-img">
+      </figure>
+    </header>
 
-.row {
-  display: flex;
-}
+    <main id="main-content">
+      <section class="intro">
+        <p>
+          Hello! My name is <strong>Nicholas Lowery</strong>. This portfolio highlights my journey as a
+          <strong>web applications &amp; programming</strong> student at FDTC, and my work as an entrepreneur
+          running both a travel business and a photo booth business. I’m passionate about computers,
+          clean code, and building solutions people actually enjoy using.
+        </p>
+        <p>
+          I’m focused on sharpening front-end and back-end skills, improving user experiences,
+          and collaborating on practical projects that make a difference.
+        </p>
+      </section>
 
-/* Create three equal columns that sits next to each other */.column {
-  flex: 33.33%;
-  padding: 5px;
-}
-</style>
-</head>
-<body>
+      <!-- Media Gallery -->
+      <section class="gallery" aria-label="Photos and Promo Video">
+        <div class="gallery-item">
+          <img src="images/nick-lowery1.png" alt="Nicholas at a workstation" class="media">
+        </div>
 
-<div class="row">
-  <div class="column">
-    <img src="images/nick-lowery1.png" alt="Nick1" style="width:100%">
+        <div class="gallery-item">
+          <video class="media" controls preload="metadata" poster="images/video-poster.jpg">
+            <source src="media/Promo-vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/nick-lowery2.jpg" alt="Nicholas speaking at an event" class="media">
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2025</span> Nicholas Lowery. All Rights Reserved.</p>
+      <p>
+        <a href="mailto:Nicholas.Lowery1@student.fdtc.edu">Nicholas.Lowery1@student.fdtc.edu</a> &middot;
+        <a href="mailto:NickLowery91@gmail.com">NickLowery91@gmail.com</a>
+      </p>
+    </footer>
   </div>
-  <div class="column">
-    <video src="media/Promo-vid.mp4"controls width="450" height="450"> style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images/nick-lowery2.jpg" alt="Nick2" style="width:100%">
-  </div>
-</div>
-	</main>
-	
-	<footer>
-		<p>&copy; Copyright 2024. All Rights Reserved.</p>
-		<p><a href="mailto:Nicholas.Lowery1@student.fdtc.edu">Nicholas.Lowery1@student.fdtc.edu</a></p>
-		<p><a href="mailto:NickLowery91@gmail.com">NickLowery91@gmail.com</a></p>
-	</footer>
-	
-	<script src="scripts/script.js"></script>
-	
+
+  <script src="scripts/script.js"></script>
 </body>
-
 </html>
+
