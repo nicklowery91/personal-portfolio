@@ -1,78 +1,110 @@
 <!DOCTYPE html>
 <!-- 
-	Student Name: Nicholas Lowery
-	File Name: Contact.html, Contact me page
-	Date: January 22, 2024
- -->
+  Student Name: Nicholas Lowery
+  File Name: contact.html
+  Page: Contact
+  Last Updated: November 11, 2025
+-->
 <html lang="en">
 <head>
-
-	<title>Nicholas Lowery: Contact</title>
-	<meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Nicholas Lowery: Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page for Nicholas Lowery — email, phone, and social links.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <div id="container">
+    <!-- Accessible, consistent nav -->
+    <nav class="site-nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Go to homepage">NL</a>
 
-<div id="container">
+      <button class="menu-toggle" aria-controls="menu-links" aria-expanded="false" aria-label="Open menu">
+        <span class="menu-icon" aria-hidden="true">&#9776;</span>
+      </button>
 
-	<!-- Mobile Nav -->
-	<nav class="mobile-nav">
-		<div id="menu-links">
-			<a href="index.html">Home</a>
-			<a href="Aboutme.html">About Me</a>
-			<a href="Education.html">Education</a>
-			<a href="Contact.html">Contact</a>
-		</div>
-		<a class="menu-icon">
-			<div>&#9776;</div>
-		</a>
-	</nav>
+      <div id="menu-links" class="menu-links" role="navigation">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a aria-current="page" href="contact.html">Contact</a>
+      </div>
+    </nav>
 
-	<header>
-	
-	<h1> Nicholas Lowery: Contact</h1>
-	<img src="images/nick-lowery.png" alt="Nick Lowery" class="center">
-	<h2>Misson: To further my career in Computer Science.</h2>
-	</header>
-	
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="Aboutme.html">About Me</a></li>
-			<li><a href="Education.html">Education</a></li>
-			<li><a href="Contact.html">Contact</a></li>
-		</ul>
-	</nav>
+    <header class="page-header">
+      <h1>Contact Nicholas Lowery</h1>
+      <p class="tagline">Mission: To further my career in Computer Science.</p>
+      <figure class="hero-figure">
+        <img src="images/nick-lowery.png" alt="Portrait of Nicholas Lowery" class="hero-img">
+      </figure>
+    </header>
 
-	<main>
-	
-	<div id="contact">
-        
-        <p>I can be reached at:</p>
-        <p><a href="mailto:Nicholas.Lowery1@student.fdtc.edu">Nicholas.Lowery1@student.fdtc.edu</a></p>
-		<p><a href="mailto:NickLowery91@gmail.com">NickLowery91@gmail.com</a></p>
-            <p>Telephone:</p>
-            <p class="tel-link round"><a href="tel:8434536914">843-453-6914</a></p>
-            <p class="tablet-desktop">843-453-6914</p>
-			
-			<a href="https://www.linkedin.com/in/nicholas-lowery-210b0471"><img src="images/linkedIn_PNG8.png" alt="LinkedIn" class="center"></a>
-			
-			<a href="https://www.facebook.com/Experiencethemagicbynick"><img src="images/facebook-logo.png" alt="Facebook" class="center"></a>
-			
-			<a href="https://www.instagram.com/experiencethemagicbynick/"><img src="images/instagram-icon.png" alt="Instagram" class="center"></a>
-	</div>
-	
-	</main>
-	
-	<footer>
-		<p>&copy; Copyright 2024. All Rights Reserved.</p>
-		
-	</footer>
-	
-	<script src="scripts/script.js"></script>
-	
+    <main id="main-content">
+      <section class="intro">
+        <p>Thanks for visiting my portfolio. I’m always open to discussing web projects, tech opportunities, and collaborations.</p>
+      </section>
+
+      <section class="contact-grid" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="sr-only">Contact details</h2>
+
+        <article class="contact-card">
+          <h3>Email</h3>
+          <ul class="contact-list">
+            <li>
+              <a class="btn-link" href="mailto:Nicholas.Lowery1@student.fdtc.edu">
+                Nicholas.Lowery1@student.fdtc.edu
+              </a>
+            </li>
+            <li>
+              <a class="btn-link" href="mailto:NickLowery91@gmail.com">
+                NickLowery91@gmail.com
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <article class="contact-card">
+          <h3>Phone</h3>
+          <p>
+            <a class="btn-link" href="tel:+18434536914" aria-label="Call 8 4 3 4 5 3 6 9 1 4">
+              (843) 453-6914
+            </a>
+          </p>
+          <p class="muted">Tap to call on mobile devices.</p>
+        </article>
+
+        <article class="contact-card">
+          <h3>Social</h3>
+          <ul class="social-list" role="list">
+            <li>
+              <a class="social-link" href="https://www.linkedin.com/in/nicholas-lowery-210b0471" target="_blank" rel="noopener">
+                <img src="images/linkedIn_PNG8.png" alt="" class="social-icon">
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://www.facebook.com/Experiencethemagicbynick" target="_blank" rel="noopener">
+                <img src="images/facebook-logo.png" alt="" class="social-icon">
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://www.instagram.com/experiencethemagicbynick/" target="_blank" rel="noopener">
+                <img src="images/instagram-icon.png" alt="" class="social-icon">
+                <span>Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2025</span> Nicholas Lowery. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="scripts/script.js"></script>
 </body>
-
 </html>
