@@ -1,109 +1,92 @@
 <!DOCTYPE html>
 <!-- 
-	Student Name: Nicholas Lowery
-	File Name: Education.html, Education page
-	Date: January 22, 2024
- -->
+  Student Name: Nicholas Lowery
+  File Name: education.html
+  Page: Education
+  Last Updated: November 11, 2025
+-->
 <html lang="en">
 <head>
-
-	<title>Nicholas Lowery: Education</title>
-	<meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Nicholas Lowery: Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Education and skills of Nicholas Lowery — web applications & programming graduate pursuing a career in computer science.">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+  <div id="container">
+    <!-- Nav -->
+    <nav class="site-nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Go to homepage">NL</a>
 
-<div id="container">
+      <button class="menu-toggle" aria-controls="menu-links" aria-expanded="false" aria-label="Open menu">
+        <span class="menu-icon" aria-hidden="true">&#9776;</span>
+      </button>
 
-	<!-- Mobile Nav -->
-	<nav class="mobile-nav">
-		<div id="menu-links">
-			<a href="index.html">Home</a>
-			<a href="Aboutme.html">About Me</a>
-			<a href="Education.html">Education</a>
-			<a href="Contact.html">Contact</a>
-		</div>
-		<a class="menu-icon">
-			<div>&#9776;</div>
-		</a>
-	</nav>
+      <div id="menu-links" class="menu-links" role="navigation">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a aria-current="page" href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
 
-	<header>
-	
-	<h1> Nicholas Lowery: Education</h1>
-	<img src="images/nick-lowery.png" alt="Nick Lowery" class="center">
-	<h2>Misson: To further my career in Computer Science.</h2>
-	</header>
-	
-	<nav>
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="Aboutme.html">About Me</a></li>
-			<li><a href="Education.html">Education</a></li>
-			<li><a href="Contact.html">Contact</a></li>
-		</ul>
-	</nav>
+    <header class="page-header">
+      <h1>Education & Skills</h1>
+      <p class="tagline">Mission: To further my career in Computer Science.</p>
+      <figure class="hero-figure">
+        <img src="images/nick-lowery.png" alt="Portrait of Nicholas Lowery" class="hero-img">
+      </figure>
+    </header>
 
-	<main>
-	<p>I am a 2009 graduate from Wilson High School 
-	<img src="images/Wilson_Logo.png" alt="Wilson Logo" class="center">
-	
-	I am a 2024 graduate from Florence-Darlington Technical College majoring in Web Applications & Programming. I plan to continue my education with getting my Bachelors in Computer Science. </p>
-	
-	<h1>Skills:</h1>
-	<ul>
-  <li>Microsoft SQL Server</li>
-  <li>JavaScript</li>
-  <li>Python (Programming Language)</li>
-  <li>C#</li>
-</ul>
+    <main id="main-content">
+      <section class="intro">
+        <p>
+          I am a proud <strong>2009 graduate of Wilson High School</strong> 
+          <img src="images/Wilson_Logo.png" alt="Wilson High School Logo" class="inline-logo"> 
+          and a <strong>2024 graduate of Florence-Darlington Technical College</strong>, 
+          where I majored in <em>Web Applications & Programming</em>. 
+          I plan to continue my education by pursuing a <strong>Bachelor’s in Computer Science</strong>.
+        </p>
+      </section>
 
-	<style>
-* {
-  box-sizing: border-box;
-}
+      <section class="education-details">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+          <li>Microsoft SQL Server</li>
+          <li>JavaScript (Front-end & Back-end)</li>
+          <li>Python (Programming Language)</li>
+          <li>C# Development</li>
+          <li>HTML & CSS Web Design</li>
+          <li>Responsive and Accessible Web Development</li>
+        </ul>
+      </section>
 
-.row {
-  display: flex;
-}
+      <section class="gallery" aria-label="Graduation Gallery">
+        <div class="gallery-item">
+          <img src="images/IMG_9096p.png" alt="Nicholas Lowery graduation photo 1" class="media">
+        </div>
+        <div class="gallery-item">
+          <img src="images/IMG_9099p.png" alt="Nicholas Lowery graduation photo 2" class="media">
+        </div>
+        <div class="gallery-item">
+          <img src="images/IMG_9102p.png" alt="Nicholas Lowery graduation photo 3" class="media">
+        </div>
+      </section>
+    </main>
 
-/* Create three equal columns that sits next to each other */.column {
-  flex: 33.33%;
-  padding: 5px;
-}
-</style>
-</head>
-<body>
-<style>
-img {
-  border: 12.5px solid #d4af37;
-}
-</style>
-
-<div class="row">
-  <div class="column">
-    <img src="images/IMG_9096p.png" alt="Img_9096" style="width:100%">
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2025</span> Nicholas Lowery. All Rights Reserved.</p>
+      <p>
+        <a href="mailto:Nicholas.Lowery1@student.fdtc.edu">Nicholas.Lowery1@student.fdtc.edu</a> &middot;
+        <a href="mailto:NickLowery91@gmail.com">NickLowery91@gmail.com</a>
+      </p>
+    </footer>
   </div>
-  <div class="column">
-    <img src="images/IMG_9099p.png" alt="Img_9099" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="images/IMG_9102p.png" alt="Img_9102" style="width:100%">
-  </div>
-</div>
 
-	</main>
-	
-	<footer>
-		<p>&copy; Copyright 2024. All Rights Reserved.</p>
-		<p><a href="mailto:Nicholas.Lowery1@student.fdtc.edu">Nicholas.Lowery1@student.fdtc.edu</a></p>
-		<p><a href="mailto:NickLowery91@gmail.com">NickLowery91@gmail.com</a></p>
-	</footer>
-	
-	<script src="scripts/script.js"></script>
-	
+  <script src="scripts/script.js"></script>
 </body>
-
 </html>
+
+
