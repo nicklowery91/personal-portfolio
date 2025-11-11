@@ -136,4 +136,16 @@ a:hover, a:focus { text-decoration: underline; }
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
+
+  #menu-links {
+  display: none;
 }
+#menu-links.show {
+  display: block;
+}
+#ffclogo.hide {
+  display: none;
+}
+
+}
+
